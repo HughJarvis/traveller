@@ -38,6 +38,11 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
 
+  let distancesArray = this.journeys.map((journey) => {
+    journey.transport
+  })
+  return Array.from(new Set(distancesArray));
+
 };
 
 
